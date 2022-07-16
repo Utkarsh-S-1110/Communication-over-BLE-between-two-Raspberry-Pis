@@ -31,21 +31,22 @@ Install the following Bluetooth packages/libraries -
 We will follow instructions from this [instructables](https://www.instructables.com/Control-Bluetooth-LE-Devices-From-A-Raspberry-Pi/). <br /> 
      - Download the desired version of X.XX.tar.xz from [here](https://www.kernel.org/pub/linux/bluetooth/) (where X.XX is the version).
      - On the terminal run (change X.XX for your version):
-       ```bash cd ~; wget https://www.kernel.org/pub/linux/bluetooth/bluez-X.XX.tar.xz```
-       ```bash tar xvf bluez-X.XX.tar.xz```
-       ```bash sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev```
-       ```bash cd bluez-X.XX```
-       ```bash export LDFLAGS=-lrt```
-       ```bash ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-library -disable-systemd```
-       ```bash make```
-       ```bash sudo make install```
-       ```bash sudo cp attrib/gatttool /usr/bin/```
+       ```cd ~; wget https://www.kernel.org/pub/linux/bluetooth/bluez-X.XX.tar.xz```<br />
+       ```tar xvf bluez-X.XX.tar.xz```<br />
+       ```sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev```<br />
+       ```cd bluez-X.XX```<br />
+       ```export LDFLAGS=-lrt```<br />
+       ```./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --enable-library -disable-systemd```<br />
+       ```make```<br />
+       ```sudo make install```<br />
+       ```sudo cp attrib/gatttool /usr/bin/```<br />
      - Start bluez service
-       ```bash sudo systemctl start bluetooth```
+       ```sudo systemctl start bluetooth```<br />
 2) **bluepy** <br />
-     ```bash sudo pip3 install bluepy```
+     ```sudo pip3 install bluepy```
 3) **bluez-peripheral** <br />
-     ```bash Sudo pip3 install bluez-peripheral```     
+     ```Sudo pip3 install bluez-peripheral``` 
+###     
 Now clone this repository in your desired folder. <br />
 ```git clone https://github.com/Utkarsh-S-1110/Communication-over-BLE-between-two-Raspberry-Pis.git```
 You are now ready to use the functions from peripheral_framework.py and central_framework.py in your projects.
