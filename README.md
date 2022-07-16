@@ -14,7 +14,7 @@ Returns a list of the MAC addresses of all available BLE devices. <br />
 Connects to the required device. <br />
 3) **send()**
 Sends your message to the connected peripheral and waits for the reply. <br />
-##
+###
 For the Peripheral Device use the functions in the peripheral_framework.py script. <br /> 
 It makes use of the  bluez-peripheral library. [Click here](https://github.com/spacecheese/bluez_peripheral) to know more. <br />
 1) **advertise()**
