@@ -43,7 +43,7 @@ We will follow instructions from this [instructables](https://www.instructables.
      - Start bluez service <br /><br />
        ```sudo systemctl start bluetooth```<br /><br />
 2) **bluepy** <br /><br />
-     ```sudo pip3 install bluepy```<br />
+     ```sudo pip3 install bluepy```<br /><br />
 3) **bluez-peripheral** <br /><br />
      ```Sudo pip3 install bluez-peripheral``` <br />
 ###     
