@@ -1,7 +1,7 @@
 # Communication-over-BLE-between-two-Raspberry-Pis
 ## Work in Progress
 ## Overview
-This project provides a framework to use simple functions to convert your Rasberry Pis into Central and Peripheral devices and to read and write data to each other.
+This project provides a framework to use simple functions to convert your Rasberry Pis into Central and Peripheral devices and to read and write data between them.
 ## Functionality
 There are wide ranges of applications for exchanging data between two devices over Bluetooth Low Energy. <br />
 This can be used as a part of a larger project like, maybe you have installed multiple Rasberry Pis in a large facility and are continuously sending data to the cloud through different WiFi connections. If one of them is unable to connect to its WiFi network, it could share its data locally with another Pi over B.L.E and ask it to send both of their data to the cloud. Or you could try something simpler like, just controlling your Pi project through your laptop.
