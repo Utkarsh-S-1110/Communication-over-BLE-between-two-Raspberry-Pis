@@ -30,7 +30,7 @@ Install the following Bluetooth packages/libraries -
 1) **Bluez** <br />
 We will follow instructions from this [instructables](https://www.instructables.com/Control-Bluetooth-LE-Devices-From-A-Raspberry-Pi/). <br /> 
      - Download the desired version of X.XX.tar.xz from [here](https://www.kernel.org/pub/linux/bluetooth/) (where X.XX is the version).
-     - On the terminal run (change X.XX for your version):<br />
+     - On the terminal run (change X.XX for your version):<br /><br />
        ```cd ~; wget https://www.kernel.org/pub/linux/bluetooth/bluez-X.XX.tar.xz```<br /><br />
        ```tar xvf bluez-X.XX.tar.xz```<br /><br />
        ```sudo apt-get install libusb-dev libdbus-1-dev libglib2.0-dev libudev-dev libical-dev libreadline-dev```<br /><br />
@@ -40,13 +40,13 @@ We will follow instructions from this [instructables](https://www.instructables.
        ```make```<br /><br />
        ```sudo make install```<br /><br />
        ```sudo cp attrib/gatttool /usr/bin/```<br /><br />
-     - Start bluez service <br />
-       ```sudo systemctl start bluetooth```<br />
-2) **bluepy** <br />
-     ```sudo pip3 install bluepy```
-3) **bluez-peripheral** <br />
-     ```Sudo pip3 install bluez-peripheral``` 
+     - Start bluez service <br /><br />
+       ```sudo systemctl start bluetooth```<br /><br />
+2) **bluepy** <br /><br />
+     ```sudo pip3 install bluepy```<br />
+3) **bluez-peripheral** <br /><br />
+     ```Sudo pip3 install bluez-peripheral``` <br />
 ###     
-Now clone this repository in your desired folder. <br />
-```git clone https://github.com/Utkarsh-S-1110/Communication-over-BLE-between-two-Raspberry-Pis.git``` <br />
+Now clone this repository in your desired folder. <br /><br />
+```git clone https://github.com/Utkarsh-S-1110/Communication-over-BLE-between-two-Raspberry-Pis.git``` <br /><br />
 You are now ready to use the functions from peripheral_framework.py and central_framework.py in your projects.
