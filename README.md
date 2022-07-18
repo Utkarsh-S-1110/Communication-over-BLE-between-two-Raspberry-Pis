@@ -1,5 +1,4 @@
 # Communication-over-BLE-between-two-Raspberry-Pis
-## Work in Progress
 ## Overview
 This project provides a framework to use simple functions to convert your Raspberry Pis into Central and Peripheral devices and to read and write data between them.
 ## Functionality
