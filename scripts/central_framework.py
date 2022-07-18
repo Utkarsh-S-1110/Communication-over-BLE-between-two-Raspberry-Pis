@@ -18,7 +18,7 @@ class central_framework:
         devices = scanner.scan(timer)
         mac_Address = []
         for device in devices:
-            mac_Address.append([device.addr])
+            mac_Address.append(device.addr)
         return mac_Address  
 
 # Connects to the required device.
@@ -35,7 +35,7 @@ class central_framework:
                 return False
             repeat=False
             try:
-                self.dev = btle.Peripheral(mac_Address) 
+                self.ble_central_obj.dev = btle.Peripheral(mac_Address) 
             except btle.BTLEDisconnectError :
                 repeat=True   
         time.sleep(1)
@@ -48,14 +48,14 @@ class central_framework:
     def send(self,msg):
         v1= str(self.unique_id) + ";" + msg
         try:
-            self.writeChar.write(bytes(v1, encoding='utf8'),True)
+            self.ble_central_obj.writeChar.write(bytes(v1, encoding='utf8'),True)
         except btle.BTLEGattError:
             return "Bluetooth command failed"
         response_list = [None,None]
         while not (response_list[0] == str(self.unique_id)):
             time.sleep(0.010)
             try:
-                response = self.readChar.read().decode('utf-8')
+                response = self.ble_central_obj.readChar.read().decode('utf-8')
                 response_list=response.split(";",1)
             except btle.BTLEGattError:
                 pass

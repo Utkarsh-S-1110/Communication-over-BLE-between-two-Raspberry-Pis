@@ -25,8 +25,8 @@ class central_framework:
 
 # Shut down the Peripheral.
    def exit(self):
-      self.loop.ble_peripheral_obj.run_until_complete(self.ble_peripheral_obj.call_wait())
-      self.loop.ble_peripheral_obj.close()
+      self.ble_peripheral_obj.loop.run_until_complete(self.ble_peripheral_obj.call_wait())
+      self.ble_peripheral_obj.loop.close()
       exit()
 
 

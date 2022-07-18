@@ -7,6 +7,8 @@ class ScanDelegate(DefaultDelegate):
         DefaultDelegate.__init__(self)
 
 class BLE_Central:
+    def __init__(self):
+        self.dev = None
     def find_services(self):
         try:
             uuidConfig = btle.UUID(0xBEEF)
